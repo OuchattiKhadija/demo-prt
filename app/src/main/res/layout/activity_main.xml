@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/activity_main_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:tabSelectedTextColor="@color/colorAccent">
+        <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bluetooth"/>
+        <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WIFI"/>
+        <android.support.design.widget.TabItem android:layout_width="match_parent" android:layout_height="wrap_content" android:text="USB"/>
+    </android.support.design.widget.TabLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/connect_layout" android:background="@drawable/btn_style_one_focused" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:textColor="#000" android:gravity="center_vertical" android:id="@+id/connect_state" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:text="@string/connect" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_weight="2">
+            <TextView android:textColor="#000" android:gravity="center_vertical" android:id="@+id/connect_name" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:text="名称" android:layout_weight="1"/>
+            <TextView android:textColor="#000" android:gravity="center_vertical" android:id="@+id/connect_address" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:text="地址" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <Button android:id="@+id/printText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="打印文本"/>
+        <Button android:id="@+id/printImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="打印图片"/>
+        <Button android:id="@+id/print_qr" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="打印条码"/>
+        <Button android:id="@+id/bigData" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="大数据通讯"/>
+        <Button android:id="@+id/update" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="软件更新"/>
+    </LinearLayout>
+</LinearLayout>
